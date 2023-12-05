@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Alta</title>
+</head>
+<body>
+	<h1>Dar de alta un nuevo comercial : </h1>
+	
+	<form th:action = "@{/comerciales/alta}" th:object="${comercial}" th:method="post">
+		<label>Nombre : </label>
+		<input type="text" th:field="*{nombre}" />
+		<label>Apellido 1 : </label>
+		<input type="text" th:field="*{apellido1}" />
+		<label>Apellido 2 : </label>
+		<input type="text" th:field="*{apellido2}" />
+		<label>Comisión : </label>
+		<input type="text" th:field="*{comision}" />
+		<button type="submit">Dar de alta</button>
+	</form>
+	<button><a th:href="@{/}">Volver</a></button>
+</body>
+</html>

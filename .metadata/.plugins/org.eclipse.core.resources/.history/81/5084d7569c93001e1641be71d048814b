@@ -1,0 +1,34 @@
+package unir.exa.ventas.modelo.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import unir.exa.ventas.modelo.entity.Pedido;
+import unir.exa.ventas.repository.PedidoRepository;
+@Repository
+public class PedidoDaoImplMy8Jpa implements PedidoDao{
+	
+	@Autowired
+	PedidoRepository pRepo;
+
+	@Override
+	public List<Pedido> todosLosPedidos() {
+		return pRepo.findAll();
+	}
+
+	@Override
+	public List<Pedido> pedidosPorCliente(int idCliente) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Pedido> pedidosPorComercial(int idComercial) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

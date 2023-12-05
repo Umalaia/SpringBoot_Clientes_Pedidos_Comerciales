@@ -1,0 +1,129 @@
+package unir.exa.ventas.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import unir.exa.ventas.modelo.dao.ComercialDao;
+import unir.exa.ventas.modelo.dao.PedidoDao;
+import unir.exa.ventas.modelo.entity.Cliente;
+import unir.exa.ventas.modelo.entity.Comercial;
+import unir.exa.ventas.modelo.entity.Pedido;
+
+@Controller
+public class ComercialController {
+
+	@Autowired
+	private ComercialDao comDao;
+	
+	@Autowired
+	private PedidoDao pDao;
+	
+	@GetMapping("/")
+	public String verHome(Model model, Comercial comercial) {
+		//Recogemos los datos del comDAO todosLosComerciales en una lista llamada comerciales para pasarsela al model.
+		List<Comercial> comerciales = comDao.todosLosComerciales();
+		model.addAttribute("comerciales", comerciales);
+		return "home";
+	}
+	
+	
+	//ALTA
+	//llamamos al comercial y al model, por el model añadimos el atributo comercial llamado comercial
+	@GetMapping("/comerciales/alta")
+	public String altaComercial(Model model, Comercial comercial) {
+		model.addAttribute("comercial", comercial);
+		return "altaComercial";
+	}
+	
+	//llamamos al comercial y al ratt y hacemos un try catch, en el try se llama al altaComercial 
+	//pasandole el comercial y mostramos con el ratt que se ha dado de alta
+	//y en el catch mostramos con el ratt que no se ha dado de alta
+	@PostMapping("/comerciales/alta")
+	public String altaComercial(Comercial comercial, RedirectAttributes ratt) {
+		try {
+			comDao.altaComercial(comercial);
+			ratt.addFlashAttribute("mensaje", "Comercial dado de alta");
+			return "redirect:/";
+		} catch (Exception e) {
+			ratt.addFlashAttribute("mensaje", "Comercial NO dado de alta");
+			return "redirect:/";
+		}	
+	}
+	
+	
+	
+	//ELIMINAR
+	//pasamos por pathvariable el idComercial y el model para luego informar de que se ha dado de baja
+	//llamamos al metodo eliminar comercial del comDao y le pasamos el idComercial
+	@GetMapping("/comerciales/eliminar/{id}")
+	public String eliminarComercial(@PathVariable ("id") int idComercial, Model model) {
+		comDao.eliminarComercial(idComercial);
+		model.addAttribute("mensaje", "Comercial dado de baja");
+		return "forward:/";
+	}
+	
+	
+	//VER DETALLES
+	//llamamos por pathvariable al idComercial y al model
+	//nos creamos un comercial al que le pasamos los datos del comDao.detallesComercial(idComercial)
+	//con el model le pasamos el comercial comercial al html, y devolvemos la vista al html
+	@GetMapping("/comerciales/verDetalles/{id}")
+	public String detallesComercial(@PathVariable ("id") int idComercial, Model model) {
+		Comercial comercial = comDao.verUnComercial(idComercial);
+		model.addAttribute("comercial", comercial);
+		return "verDetalles";
+	}
+	
+	
+	
+	//MODIFICAR
+	@GetMapping("/comerciales/modificar/{id}")
+	public String modificarComercial(Model model, @PathVariable ("id")int idComercial) {
+		Comercial comercial = comDao.verUnComercial(idComercial);
+		model.addAttribute("comercial", comercial);
+		return "modificarComercial";
+	}
+	
+	
+	@PostMapping("/comerciales/modificar/{id}")
+	public String modificarComercial(@PathVariable("id") int idComercial, RedirectAttributes ratt, Comercial comercial) {
+		Comercial com1 = comDao.verUnComercial(idComercial);
+		com1.setNombre(comercial.getNombre());
+		com1.setApellido1(comercial.getApellido1());
+		com1.setApellido2(comercial.getApellido2());
+		com1.setComision(comercial.getComision());
+		if(comDao.modificarComercial(com1) == 1) {
+			ratt.addFlashAttribute("mensaje", "Comercial modificado");
+			return "redirect:/";
+		}else
+			ratt.addFlashAttribute("mensaje", "Comercial no modificado");
+		return "redirect:/";
+	}
+	
+	
+	//PEDIDOS POR COMERCIAL
+	@GetMapping("/comerciales/pedidosPorComercial/{id}")
+	public String verPedidosPorComercial(@PathVariable ("id") int idComercial, Model model) {
+		List<Pedido> pedidos = pDao.pedidosPorComercial(idComercial);
+		model.addAttribute("pedidos", pedidos);
+		return "pedidosPorComercial";
+	}
+	
+	
+	//CLIENTES POR COMERCIAL
+	@GetMapping("/comerciales/clientesPorComercial/{id}")
+	public String verClientesPorComercial(@PathVariable ("id") int idComercial, Model model) {
+		List<Pedido> clientes = pDao.clientesPorComercial(idComercial);
+		model.addAttribute("clientes", clientes);
+		return "clientesPorComercial";
+	}
+	
+	
+}

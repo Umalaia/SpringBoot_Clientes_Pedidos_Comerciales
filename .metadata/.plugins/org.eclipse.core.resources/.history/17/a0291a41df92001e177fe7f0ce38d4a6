@@ -1,0 +1,35 @@
+package unir.exa.ventas.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import unir.exa.ventas.modelo.dao.ComercialDao;
+import unir.exa.ventas.modelo.entity.Comercial;
+
+@Controller
+public class ComercialController {
+
+	@Autowired
+	private ComercialDao comDao;
+	
+	@GetMapping("/")
+	public String verHome(Model model, Comercial comercial) {
+		//Recogemos los datos del comDAO todosLosComerciales en una lista llamada comerciales para pasarsela al model.
+		List<Comercial> comerciales = comDao.todosLosComerciales();
+		model.addAttribute("comerciales", comerciales);
+		return "home";
+	}
+	
+	
+	//ALTA
+	@GetMapping("/alta")
+	public String altaComercial(Model model, Comercial comercial) {
+		model.addAttribute("comercial", comercial);
+		return "altaComercial";
+	}
+	
+}

@@ -1,0 +1,27 @@
+package unir.exa.ventas.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import unir.exa.ventas.modelo.dao.PedidoDao;
+import unir.exa.ventas.modelo.entity.Pedido;
+
+@Controller
+public class PedidoController {
+	
+	@Autowired
+	private PedidoDao pDao;
+	
+	@GetMapping("/pedidos")
+	public String verPedidos(Model model) {
+		List<Pedido> pedidos = pDao.todosLosPedidos();
+		model.addAttribute("pedidos", pedidos);
+		return "pedidos";
+	}
+	
+	
+}

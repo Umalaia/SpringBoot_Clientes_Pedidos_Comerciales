@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Comerciales página principal</title>
+</head>
+<body>
+	<h2>Página principal</h2>
+	<h1>Página principal del Director Comercial</h1>
+	<br>
+	<button><a th:href="@{/clientes}">Clientes</a></button>
+	<br><br>
+	<button><a th:href="@{/pedidos}">Pedidos</a></button>
+	<br>
+	<h3 th:text=${mensaje}></h3>
+	<h4>Listado de comerciales</h4>
+	<button><a th:href="@{/alta}">Nuevo comercial</a></button>
+	<br><br>
+	<table>
+		<tr>
+			<td>Nombre</td>
+			<td>Apellido 1</td>
+			<td>Apellido 2</td>
+			<td>Ver Detalle</td>
+			<td>Eliminar</td>
+			<td>Modificar</td>
+		</tr>
+		<tr th:each="comercial : ${comerciales}">
+			<th th:text="${comercial.nombre}"></th>
+			<th th:text=${comercial.apellido1}></th>
+			<th th:text=${comercial.apellido2}></th>
+			<th th:href="@{/comerciales/verDetalle/{id}(id=${comercial.idComercial})}">Detalle</th>
+			<th th:href="@{/comerciales/eliminar/{id}(id=${comercial.idComercial})}">Eliminar</th>
+			<th th:href="@{/comerciales/modificar/{id}(id=${comercial.idComercial})}">Modificar</th>
+		</tr>
+	</table>
+</body>
+</html>

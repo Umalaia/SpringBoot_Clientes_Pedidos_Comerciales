@@ -1,0 +1,19 @@
+package unir.exa.ventas.modelo.dao;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import unir.exa.ventas.modelo.entity.Pedido;
+@Repository
+public class PedidoDaoImplMy8Jpa implements PedidoDao{
+	
+	
+
+	@Override
+	public List<Pedido> todosLosPedidos() {
+		return null;
+	}
+	
+
+}

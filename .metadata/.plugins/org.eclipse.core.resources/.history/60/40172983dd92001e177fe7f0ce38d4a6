@@ -1,0 +1,26 @@
+package unir.exa.ventas.modelo.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import unir.exa.ventas.modelo.entity.Comercial;
+import unir.exa.ventas.repository.ComercialRepository;
+@Repository
+public class ComercialDaoImplMy8Jpa implements ComercialDao{
+	
+	@Autowired
+	private ComercialRepository comRepo;
+
+	@Override
+	public List<Comercial> todosLosComerciales() {
+		return comRepo.findAll();
+	}
+
+	@Override
+	public Comercial altaComercial(Comercial comercial) {
+		return comRepo.save(comercial);
+	}
+
+}

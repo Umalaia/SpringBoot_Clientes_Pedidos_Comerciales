@@ -1,0 +1,9 @@
+package unir.exa.ventas.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import unir.exa.ventas.modelo.entity.Pedido;
+
+public interface PedidoRepository extends JpaRepository<Pedido, Integer>{
+
+}

@@ -1,0 +1,5 @@
+package unir.exa.ventas.modelo.dao;
+
+public interface ClienteDao {
+
+}

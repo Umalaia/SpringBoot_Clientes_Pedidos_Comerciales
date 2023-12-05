@@ -1,0 +1,5 @@
+package unir.exa.ventas.repository;
+
+public class ComercialRepository {
+
+}

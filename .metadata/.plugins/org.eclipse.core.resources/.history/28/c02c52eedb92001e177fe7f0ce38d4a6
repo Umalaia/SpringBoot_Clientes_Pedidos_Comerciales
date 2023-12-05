@@ -1,0 +1,24 @@
+package unir.exa.ventas.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import unir.exa.ventas.modelo.dao.ComercialDao;
+import unir.exa.ventas.modelo.entity.Comercial;
+
+@Controller
+public class ComercialController {
+
+	@Autowired
+	private ComercialDao comDao;
+	
+	@GetMapping("/")
+	public String verHome(Model model, Comercial comercial) {
+		Comercial com1 = comDao.todosLosComerciales();
+		model.addAttribute("comerciales", com1);
+		return "home";
+	}
+	
+}
