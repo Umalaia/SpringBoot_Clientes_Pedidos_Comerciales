@@ -18,4 +18,20 @@ public class ClienteDaoImplMy8Jpa implements ClienteDao{
 		return cliRepo.findAll();
 	}
 
+	@Override
+	public Cliente altaCliente(Cliente cliente) {
+		try {
+			return cliRepo.save(cliente);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public int eliminarCliente(int idCliente) {
+		cliRepo.deleteById(idCliente);
+		return 1;
+	}
+
 }

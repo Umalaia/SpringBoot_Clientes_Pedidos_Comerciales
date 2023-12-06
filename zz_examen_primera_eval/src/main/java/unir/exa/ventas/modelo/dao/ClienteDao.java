@@ -6,4 +6,6 @@ import unir.exa.ventas.modelo.entity.Cliente;
 
 public interface ClienteDao {
 	List<Cliente> todosLosClientes();
+	Cliente altaCliente (Cliente cliente);
+	int eliminarCliente (int idCliente);
 }

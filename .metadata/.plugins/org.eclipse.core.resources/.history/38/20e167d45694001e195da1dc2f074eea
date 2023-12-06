@@ -1,0 +1,21 @@
+package unir.exa.ventas.modelo.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import unir.exa.ventas.modelo.entity.Cliente;
+import unir.exa.ventas.repository.ClienteRepository;
+@Repository
+public class ClienteDaoImplMy8Jpa implements ClienteDao{
+	
+	@Autowired
+	ClienteRepository cliRepo;
+
+	@Override
+	public List<Cliente> todosLosClientes() {
+		return cliRepo.findAll();
+	}
+
+}
