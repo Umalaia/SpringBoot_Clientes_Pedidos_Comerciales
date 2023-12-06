@@ -30,13 +30,8 @@ public class ClienteDaoImplMy8Jpa implements ClienteDao{
 
 	@Override
 	public int eliminarCliente(int idCliente) {
-		try {
-			cliRepo.deleteById(idCliente);
-			return 1;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return 0;
-		}
+		cliRepo.deleteById(idCliente);
+		return 1;
 	}
 	
 	

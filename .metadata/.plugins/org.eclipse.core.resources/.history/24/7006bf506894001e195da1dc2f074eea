@@ -33,12 +33,8 @@ public class ComercialDaoImplMy8Jpa implements ComercialDao{
 
 	@Override
 	public int eliminarComercial(int idComercial) {
-		try {
-			comRepo.deleteById(idComercial);
-			return 1;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}return 0;
+		comRepo.deleteById(idComercial);
+		return 1;
 	}
 
 

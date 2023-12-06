@@ -48,7 +48,8 @@ public class ClienteController {
 	
 	@PostMapping("/clientes/alta")
 	public String altaCliente(RedirectAttributes ratt, Cliente cliente) {
-		if(cliDao.altaCliente(cliente) != null) {
+		Cliente cli1 = cliDao.altaCliente(cliente);
+		if(cli1 != null) {
 			ratt.addFlashAttribute("mensaje", "Cliente dado de alta correctamente");
 			return "redirect:/clientes";
 		}else {
@@ -59,14 +60,10 @@ public class ClienteController {
 	
 	
 	@GetMapping("/clientes/eliminar/{id}")
-	public String eliminarCliente(@PathVariable ("id") int idCliente, Model model) {
-		if(cliDao.eliminarCliente(idCliente) == 1) {
-		model.addAttribute("mensaje", "Cliente eliminado correctamente");
+	public String eliminarCliente(@PathVariable ("id") int idCliente, RedirectAttributes ratt) {
+		cliDao.eliminarCliente(idCliente);
+		ratt.addFlashAttribute("mensaje", "Cliente eliminado correctamente");
 		return "redirect:/clientes";
-		}else {
-			model.addAttribute("mensaje", "Cliente con pedidos asociados no puede ser eliminado");
-		}
-		return "forward:/clientes";
 	}
 
 	

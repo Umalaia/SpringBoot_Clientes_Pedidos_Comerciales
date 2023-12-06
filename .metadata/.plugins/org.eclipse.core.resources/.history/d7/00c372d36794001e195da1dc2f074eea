@@ -64,9 +64,9 @@ public class ClienteController {
 		model.addAttribute("mensaje", "Cliente eliminado correctamente");
 		return "redirect:/clientes";
 		}else {
-			model.addAttribute("mensaje", "Cliente con pedidos asociados no puede ser eliminado");
+			model.addAttribute("mensaje", "Cliente eliminado correctamente");
 		}
-		return "forward:/clientes";
+		return "redirect:/clientes";
 	}
 
 	

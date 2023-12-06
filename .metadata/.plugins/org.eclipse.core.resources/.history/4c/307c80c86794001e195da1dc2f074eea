@@ -59,14 +59,10 @@ public class ClienteController {
 	
 	
 	@GetMapping("/clientes/eliminar/{id}")
-	public String eliminarCliente(@PathVariable ("id") int idCliente, Model model) {
-		if(cliDao.eliminarCliente(idCliente) == 1) {
-		model.addAttribute("mensaje", "Cliente eliminado correctamente");
+	public String eliminarCliente(@PathVariable ("id") int idCliente, RedirectAttributes ratt) {
+		cliDao.eliminarCliente(idCliente);
+		ratt.addFlashAttribute("mensaje", "Cliente eliminado correctamente");
 		return "redirect:/clientes";
-		}else {
-			model.addAttribute("mensaje", "Cliente con pedidos asociados no puede ser eliminado");
-		}
-		return "forward:/clientes";
 	}
 
 	
