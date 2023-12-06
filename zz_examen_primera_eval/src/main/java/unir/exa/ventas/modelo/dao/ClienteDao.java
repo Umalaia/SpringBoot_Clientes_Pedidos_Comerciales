@@ -8,4 +8,6 @@ public interface ClienteDao {
 	List<Cliente> todosLosClientes();
 	Cliente altaCliente (Cliente cliente);
 	int eliminarCliente (int idCliente);
+	int modificarCliente(Cliente cliente);
+	Cliente verUnCliente(int idCliente);
 }

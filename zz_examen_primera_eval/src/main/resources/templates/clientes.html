@@ -17,6 +17,7 @@
 			<th>Categoria</th>
 			<th>Pedidos por cliente</th>
 			<th>Eliminar cliente</th>
+			<th>Modificar cliente</th>
 		</tr>
 		<tr th:each="cliente : ${clientes}">
 			<td th:text="${cliente.nombre}"></td>
@@ -25,6 +26,7 @@
 			<td th:text="${cliente.categoria}"></td>
 			<td><a th:href="@{/clientes/pedidosPorCliente/{id}(id=${cliente.idCliente})}">Ver pedidos</a></td>
 			<td><a th:href="@{/clientes/eliminar/{id}(id=${cliente.idCliente})}">Eliminar</a></td>
+			<td><a th:href="@{/clientes/modificar/{id}(id=${cliente.idCliente})}">Modificar</a></td>
 		</tr>
 	</table>
 	<br>

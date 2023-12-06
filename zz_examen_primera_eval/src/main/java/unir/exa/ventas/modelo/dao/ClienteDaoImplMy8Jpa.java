@@ -33,5 +33,23 @@ public class ClienteDaoImplMy8Jpa implements ClienteDao{
 		cliRepo.deleteById(idCliente);
 		return 1;
 	}
+	
+	
+	@Override
+	public Cliente verUnCliente(int idCliente) {
+		return cliRepo.findById(idCliente).orElse(null);
+	}
+
+	//Es imprescindible tener el metodo verunCliente para hacer luego el PostMapping de modificar
+	@Override
+	public int modificarCliente(Cliente cliente) {
+		if(cliRepo.findById(cliente.getIdCliente()) != null) {
+			cliRepo.save(cliente);
+			return 1;
+		}
+		return 0;
+	}
+
+
 
 }

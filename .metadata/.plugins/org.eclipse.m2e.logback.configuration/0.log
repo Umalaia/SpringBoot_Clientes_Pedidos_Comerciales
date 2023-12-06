@@ -501,3 +501,51 @@
 2023-12-06 18:04:42,509 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
 2023-12-06 18:05:16,024 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2023-12-06 18:05:16,029 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 10 resources from src\main\resources to target\classes
+2023-12-06 18:05:16,033 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:07:43,611 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:07:43,639 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 10 resources from src\main\resources to target\classes
+2023-12-06 18:07:43,645 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:12:43,731 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:12:43,737 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 10 resources from src\main\resources to target\classes
+2023-12-06 18:12:43,742 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:15:32,566 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-06 18:15:32,566 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:15:32,569 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:16:00,588 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:16:00,593 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 18:16:00,599 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:21:25,492 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:21:25,498 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 18:21:25,503 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:21:57,216 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:21:57,221 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 18:21:57,226 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:23:41,294 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:23:41,300 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 18:23:41,304 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:24:39,371 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:24:39,378 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 18:24:39,384 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:25:14,434 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-06 18:25:14,434 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:25:14,437 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:26:33,325 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-06 18:26:33,325 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:26:33,327 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:26:43,778 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-06 18:26:43,778 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:26:43,781 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:27:36,388 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:27:36,395 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 18:27:36,401 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:30:41,802 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:30:41,809 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 18:30:41,815 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:32:12,274 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:32:12,279 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 18:32:12,283 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:33:31,249 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-06 18:33:31,249 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:33:31,252 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 18:34:02,769 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 18:34:02,775 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes

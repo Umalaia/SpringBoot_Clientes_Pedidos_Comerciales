@@ -1,0 +1,56 @@
+package unir.exa.ventas.modelo.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import unir.exa.ventas.modelo.entity.Cliente;
+import unir.exa.ventas.repository.ClienteRepository;
+@Repository
+public class ClienteDaoImplMy8Jpa implements ClienteDao{
+	
+	@Autowired
+	ClienteRepository cliRepo;
+
+	@Override
+	public List<Cliente> todosLosClientes() {
+		return cliRepo.findAll();
+	}
+
+	@Override
+	public Cliente altaCliente(Cliente cliente) {
+		try {
+			return cliRepo.save(cliente);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public int eliminarCliente(int idCliente) {
+		cliRepo.deleteById(idCliente);
+		return 1;
+	}
+	
+	
+	@Override
+	public Cliente verUnCliente(int idCliente) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	//Es imprescindible tener el metodo verunCliente para hacer luego el PostMapping de modificar
+	@Override
+	public int modificarCliente(Cliente cliente) {
+		if(cliRepo.findById(cliente.getIdCliente()) != null) {
+			cliRepo.save(cliente);
+			return 1;
+		}else
+		return 0;
+	}
+
+
+
+}

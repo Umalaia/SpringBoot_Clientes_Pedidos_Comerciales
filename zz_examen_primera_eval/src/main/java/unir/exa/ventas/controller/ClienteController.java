@@ -66,4 +66,28 @@ public class ClienteController {
 		return "redirect:/clientes";
 	}
 
+	
+	@GetMapping("/clientes/modificar/{id}")
+	public String modificarCliente(@PathVariable ("id") int idCliente, Model model) {
+		Cliente cliente = cliDao.verUnCliente(idCliente);
+		model.addAttribute("cliente", cliente);
+		return "modificarCliente";
+	}
+	
+	@PostMapping("/clientes/modificar/{id}")
+	public String modificarCliente(@PathVariable ("id") int idCliente, RedirectAttributes ratt, Cliente cliente) {
+	Cliente cli1 = cliDao.verUnCliente(idCliente);
+	cli1.setNombre(cliente.getNombre());
+	cli1.setApellido1(cliente.getApellido1());
+	cli1.setApellido2(cliente.getApellido2());
+	cli1.setCategoria(cliente.getCategoria());
+	if(cliDao.modificarCliente(cli1) == 1) {
+		ratt.addFlashAttribute("mensaje", "Cliente ha sido modificado correctamente");
+		return "redirect:/clientes";
+	}else
+		ratt.addFlashAttribute("mensaje", "Cliente no ha sido modificado");
+		return "redirect:/clientes";
+	}
+	
+	
 }
