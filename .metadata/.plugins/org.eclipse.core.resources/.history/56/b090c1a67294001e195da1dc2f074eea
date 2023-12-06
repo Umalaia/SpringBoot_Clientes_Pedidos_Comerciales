@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import unir.exa.ventas.modelo.dao.ClienteDao;
 import unir.exa.ventas.modelo.dao.ComercialDao;
 import unir.exa.ventas.modelo.dao.PedidoDao;
 import unir.exa.ventas.modelo.entity.Cliente;
@@ -25,9 +24,6 @@ public class ComercialController {
 	
 	@Autowired
 	private PedidoDao pDao;
-	
-	@Autowired
-	private ClienteDao cliDao;
 	
 	@GetMapping("/")
 	public String verHome(Model model, Comercial comercial) {
@@ -133,14 +129,8 @@ public class ComercialController {
 	}
 	
 	
-	//NO FUNCIONA
 	//CLIENTES POR PEDIDOS DEL COMERCIAL
 	@GetMapping("/comerciales/pedidosPorComercial/{id}/verDetalleCliente/{idCliente}")
-	public String verClientesPorPedidoComercial(@PathVariable ("id") int idComercial, @PathVariable ("idCliente")int idCliente, Model model) {
-		Cliente cliente = cliDao.verUnCliente(idCliente);
-		model.addAttribute("cliente", cliente);
-		return "verDetalleCliente";
-	}
 	
 	
 }

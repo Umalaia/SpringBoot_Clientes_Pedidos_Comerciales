@@ -12,14 +12,13 @@
 			<th>Fecha</th>
 			<th>Total</th>
 			<th>Id Cliente</th>
-			<th>Ver datos del cliente</th>
 		</tr>
 		<tr th:each="pedido : ${pedidos}">
 			<td th:text="${pedido.idPedido}"></td>
 			<td th:text="${pedido.fecha}"></td>
 			<td th:text ="${pedido.total}"></td>
 			<td th:text ="${pedido.cliente.idCliente}"></td>
-			<!-- <td th:href= "@{/comerciales/pedidosPorComercial/{id}(id=${comercial.idComercial})/verDetalleCliente/{idCliente}(id=${cliente.idCliente})}"></td> -->
+			<!-- <td th:href= "@{/comerciales/pedidosPorComercial/{id}(id=${pedido.idPedido})/verDetalleCliente/{id}(id=${cliente.idCliente})}"></td> -->
 		</tr>
 	</table>
 	<br>

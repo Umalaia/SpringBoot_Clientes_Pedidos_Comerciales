@@ -133,12 +133,11 @@ public class ComercialController {
 	}
 	
 	
-	//NO FUNCIONA
 	//CLIENTES POR PEDIDOS DEL COMERCIAL
 	@GetMapping("/comerciales/pedidosPorComercial/{id}/verDetalleCliente/{idCliente}")
-	public String verClientesPorPedidoComercial(@PathVariable ("id") int idComercial, @PathVariable ("idCliente")int idCliente, Model model) {
-		Cliente cliente = cliDao.verUnCliente(idCliente);
-		model.addAttribute("cliente", cliente);
+	public String verClientesPorPedidoComercial(@PathVariable ("id") int idComercial, @PathVariable int idCliente, Model model) {
+		cliDao.verUnCliente(idCliente);
+		model.addAttribute("idCliente", idCliente);
 		return "verDetalleCliente";
 	}
 	

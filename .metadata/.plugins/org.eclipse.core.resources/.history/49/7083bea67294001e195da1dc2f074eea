@@ -19,7 +19,7 @@
 			<td th:text="${pedido.fecha}"></td>
 			<td th:text ="${pedido.total}"></td>
 			<td th:text ="${pedido.cliente.idCliente}"></td>
-			<!-- <td th:href= "@{/comerciales/pedidosPorComercial/{id}(id=${comercial.idComercial})/verDetalleCliente/{idCliente}(id=${cliente.idCliente})}"></td> -->
+			<!-- <td th:href= "@{/comerciales/pedidosPorComercial/{id}(id=${pedido.idPedido})/verDetalleCliente/{idCliente}(id=${cliente.idCliente})}"></td> -->
 		</tr>
 	</table>
 	<br>
