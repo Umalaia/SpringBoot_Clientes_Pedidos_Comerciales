@@ -17,7 +17,7 @@
 			<td th:text="${pedido.idPedido}"></td>
 			<td th:text="${pedido.fecha}"></td>
 			<td th:text ="${pedido.total}"></td>
-			<td th:text ="${pedido.cliente.idCliente}"></td>
+			<td th:text ="${pedido.idCliente}"></td>
 		</tr>
 	</table>
 	<br>

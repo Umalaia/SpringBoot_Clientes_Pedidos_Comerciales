@@ -576,3 +576,12 @@
 2023-12-06 19:48:38,042 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
 2023-12-06 19:50:24,909 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2023-12-06 19:50:24,915 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 19:50:24,920 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 19:51:29,870 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 19:51:29,876 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2023-12-06 19:51:29,880 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 20:46:42,002 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-06 20:46:42,002 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-06 20:46:42,005 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Sheila\OneDrive\Escritorio\DAW\EXAMEN SERVIDOR\zz_examen_primera_eval\src\test\resources
+2023-12-06 20:47:48,158 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-06 20:47:48,158 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes

@@ -11,13 +11,11 @@
 			<th>ID Pedido</th>
 			<th>Fecha</th>
 			<th>Total</th>
-			<th>Id Cliente</th>
 		</tr>
 		<tr th:each="pedido : ${pedidos}">
 			<td th:text="${pedido.idPedido}"></td>
 			<td th:text="${pedido.fecha}"></td>
 			<td th:text ="${pedido.total}"></td>
-			<td th:text ="${pedido.cliente.idCliente}"></td>
 		</tr>
 	</table>
 	<br>
