@@ -11,7 +11,7 @@ import unir.exa.ventas.repository.ClienteRepository;
 public class ClienteDaoImplMy8Jpa implements ClienteDao{
 	
 	@Autowired
-	private ClienteRepository cliRepo;
+	ClienteRepository cliRepo;
 
 	@Override
 	public List<Cliente> todosLosClientes() {
