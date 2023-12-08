@@ -5,7 +5,7 @@
 <title>Pedidos por comercial</title>
 </head>
 <body>
-	<h1>Listado de pedidos por id del comercial : <span th:text=${idComercial}></span></h1>
+	<h1>Listado de pedidos</h1>
 	<table border="1">
 		<tr>
 			<th>ID Pedido</th>

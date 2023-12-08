@@ -120,7 +120,6 @@ public class ComercialController {
 	public String verPedidosPorComercial(@PathVariable ("id") int idComercial, Model model) {
 		List<Pedido> pedidos = pDao.pedidosPorComercial(idComercial);
 		model.addAttribute("pedidos", pedidos);
-		model.addAttribute("idComercial", idComercial);
 		return "pedidosPorComercial";
 	}
 	
@@ -130,7 +129,6 @@ public class ComercialController {
 	public String verClientesPorComercial(@PathVariable ("id") int idComercial, Model model) {
 		List<Pedido> pedidos = pDao.clientesPorComercial(idComercial);
 		model.addAttribute("pedidos", pedidos);
-		model.addAttribute("idComercial", idComercial);
 		return "clientesPorComercial";
 	}
 	

@@ -5,7 +5,7 @@
 <title>Clientes por comercial</title>
 </head>
 <body>
-	<h1>Listado de clientes por comercial idComercial: <span th:text=${idComercial}></span></h1>
+	<h1>Listado de clientes por comercial : <span th:text=${idComercial}></span></h1>
 	<table border ="1">
 		<tr>
 			<th>Nombre</th>

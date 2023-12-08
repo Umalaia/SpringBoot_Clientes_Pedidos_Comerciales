@@ -36,7 +36,6 @@ public class ClienteController {
 	public String verPedidosPorCliente(@PathVariable ("id") int idCliente, Model model) {
 		List<Pedido> pedidos = pDao.pedidosPorCliente(idCliente);
 		model.addAttribute("pedidos", pedidos);
-		model.addAttribute("idCliente", idCliente);
 		return "pedidosPorCliente";
 	}
 	
